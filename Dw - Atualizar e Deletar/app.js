@@ -6,7 +6,8 @@ const Handlebars = require("handlebars")
 
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app')
 const { getFirestore, Timestamp, FieldValue, Filter } = require('firebase-admin/firestore')
-const serviceAccount = require('./webii-b0511-firebase-adminsdk-sjdk4-69623176e0.json')
+const serviceAccount = require('./path/to/serviceAccountKey.json'); //adicionar chave privada ao usar
+ 
 
 Handlebars.registerHelper('eq', function(v1, v2) {
     return v1 === v2;
